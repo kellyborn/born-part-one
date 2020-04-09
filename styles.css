@@ -1,12 +1,8 @@
 /* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
-
-/*.container {
-    display: flex;
-    flex-wrap: nowrap;
-}*/
 
 /* Header */
 header {
@@ -31,16 +27,18 @@ h2 span {
 
 .navigation {
     flex-flow:row wrap;
-
     list-style: none;
     margin: 0px;
+    padding: 0px;
 }
 
 .navigation a {
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding-top: 10px;
+    margin: 10px;
     color: #000;
+    font-size: 18px;
 }
 
 .navigation a:hover {
@@ -49,7 +47,6 @@ h2 span {
 
 /* Content Area */
 .content {
-
     background-color: #fff;
     padding: 20px;
     }
@@ -62,6 +59,7 @@ button {
     background-color: #20a8b4;
     width: 100%;
     font-size: 16px;
+    text-align: left;
     }
 
 button:hover {
@@ -89,13 +87,17 @@ button {
 
 .content {
     display: flex;
+    flex-direction: row;
     align-items: center;
-
 }
 
 .image {
     display: flex;
+    justify-content: flex-end;
     float: right;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
 } 
 
 }
